@@ -1,0 +1,269 @@
+{
+  "created_at_utc": "2026-09-07T21:30:48.127909+00:00",
+  "dataset_sha256": "c7eae68df7ff627089b44df6123c4974e71065f4c342b45a4bf4664bdea6beb0",
+  "rows": 78600,
+  "train_rows": 62880,
+  "test_rows": 15720,
+  "seed": 42,
+  "trees": 100,
+  "sklearn_version": "1.9.0",
+  "classes": {
+    "low_risk": 63494,
+    "moderate_risk": 8611,
+    "high_risk": 6495
+  },
+  "risk_score_ranges": {
+    "high_risk": {
+      "min": 90.0,
+      "max": 100.0
+    },
+    "low_risk": {
+      "min": 15.0,
+      "max": 59.0625
+    },
+    "moderate_risk": {
+      "min": 62.5,
+      "max": 84.375
+    }
+  },
+  "experiments": {
+    "dummy": {
+      "fit_seconds": 0.013089500018395483,
+      "classification_report": {
+        "high_risk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1299.0
+        },
+        "low_risk": {
+          "precision": 0.807824427480916,
+          "recall": 1.0,
+          "f1-score": 0.8936978781800908,
+          "support": 12699.0
+        },
+        "moderate_risk": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 1722.0
+        },
+        "accuracy": 0.807824427480916,
+        "macro avg": {
+          "precision": 0.26927480916030533,
+          "recall": 0.3333333333333333,
+          "f1-score": 0.29789929272669696,
+          "support": 15720.0
+        },
+        "weighted avg": {
+          "precision": 0.6525803056348698,
+          "recall": 0.807824427480916,
+          "f1-score": 0.7219509767817412,
+          "support": 15720.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          1299,
+          0
+        ],
+        [
+          0,
+          12699,
+          0
+        ],
+        [
+          0,
+          1722,
+          0
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "high_risk",
+        "low_risk",
+        "moderate_risk"
+      ]
+    },
+    "with_score": {
+      "fit_seconds": 0.5953898999723606,
+      "classification_report": {
+        "high_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1299.0
+        },
+        "low_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12699.0
+        },
+        "moderate_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1722.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15720.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15720.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1299,
+          0,
+          0
+        ],
+        [
+          0,
+          12699,
+          0
+        ],
+        [
+          0,
+          0,
+          1722
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "high_risk",
+        "low_risk",
+        "moderate_risk"
+      ]
+    },
+    "without_score": {
+      "fit_seconds": 0.6924941999604926,
+      "classification_report": {
+        "high_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1299.0
+        },
+        "low_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 12699.0
+        },
+        "moderate_risk": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 1722.0
+        },
+        "accuracy": 1.0,
+        "macro avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15720.0
+        },
+        "weighted avg": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1-score": 1.0,
+          "support": 15720.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          1299,
+          0,
+          0
+        ],
+        [
+          0,
+          12699,
+          0
+        ],
+        [
+          0,
+          0,
+          1722
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "high_risk",
+        "low_risk",
+        "moderate_risk"
+      ]
+    },
+    "behavior_only": {
+      "fit_seconds": 1.1229342999868095,
+      "classification_report": {
+        "high_risk": {
+          "precision": 0.20270270270270271,
+          "recall": 0.023094688221709007,
+          "f1-score": 0.0414651002073255,
+          "support": 1299.0
+        },
+        "low_risk": {
+          "precision": 0.8938451158257741,
+          "recall": 0.9388928262067879,
+          "f1-score": 0.9158153468008295,
+          "support": 12699.0
+        },
+        "moderate_risk": {
+          "precision": 0.7021943573667712,
+          "recall": 0.9105691056910569,
+          "f1-score": 0.7929203539823009,
+          "support": 1722.0
+        },
+        "accuracy": 0.8601145038167939,
+        "macro avg": {
+          "precision": 0.599580725298416,
+          "recall": 0.6241855400398513,
+          "f1-score": 0.5834002669968187,
+          "support": 15720.0
+        },
+        "weighted avg": {
+          "precision": 0.8157397341010113,
+          "recall": 0.8601145038167939,
+          "f1-score": 0.8301024875159396,
+          "support": 15720.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          1267,
+          2
+        ],
+        [
+          113,
+          11923,
+          663
+        ],
+        [
+          5,
+          149,
+          1568
+        ]
+      ],
+      "confusion_matrix_labels": [
+        "high_risk",
+        "low_risk",
+        "moderate_risk"
+      ]
+    }
+  },
+  "limitations": [
+    "Educational metaverse dataset, not verified production fraud labels.",
+    "risk_score is a target proxy; transaction_type includes hindsight-like categories.",
+    "One random split, no temporal or cross-domain validation and no probability calibration.",
+    "The deployable variant was chosen in advance by feature availability, not test performance."
+  ]
+}
